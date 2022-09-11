@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>GHMOVIES</title>
+        
+        <link rel="stylesheet" type = "text/css" href="base.css"/>
+        <style type = text/css>
+            .sidenav {
+                /*navbar as a whole */
+                height: 100%;
+                width: 18%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: rgb(73, 73, 73);
+                background-image: url('filmImage.jpg');
+                overflow-x: hidden;
+               
+            }
+             
+            .sidenav a {
+                /*Text within navbar */
+                padding: 4px 8px 6px 16px;
+                text-decoration: none;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 26px;
+                color: bisque;
+                display: block;
+            }
+             
+            .sidenav a:hover {
+                color: #f1f1f1;
+                font-size: larger;
+            }
+             
+            .main{
+                margin-left: 300px;
+                padding: 0px 10px;
+            }
+            </style>
+    </head>
+    <body>
+        <div class = "sidenav">
+            <a href = "/Home">Home</a>
+            <a href = "/MoviePicker">Add Movie</a>
+        </div>
+
+        <div id="content", name="content", class="main">
+
+            {% block content %}
+            {% endblock %}
+
+        </div>
+    </body>
+</html>
