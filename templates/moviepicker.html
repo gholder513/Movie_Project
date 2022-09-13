@@ -6,41 +6,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GHMOVIES</title>
+    <title>RandMovies</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='moviepicker.css') }}">
+
 </head>
-
-<style> 
-h2 {
-    text-align: center;
-    
-}
-
-h2:hover {
-    transition: font-size 3s;
-    font-size: xx-large;
-}
-
-.text_box {
-    width: 25%;
-    height: 95px;    
-    border-radius: 2px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
-}
-.text_box:focus { 
-    width: 50%;
-    
-    }
-    
-</style>
-
+<div class = "baseDiv1">
+    <img src="{{url_for('static', filename='filmImage.jpg')}}" />
+</div>
 <h2>Having Trouble Picking a Movie?</h2>
 <body>
     <div class = text_box>
     <form autocomplete="on" form method="POST">
-        <label for= "movieName"> Movie Name:</label>
+        <label for= "movieName"> Movie:</label>
         <input type="text" id="movieName" name="movieName" placeholder="Type in the Magic Box"><br>
     </form>
 </div>

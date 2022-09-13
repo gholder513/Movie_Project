@@ -1,0 +1,60 @@
+@keyframes MoviePickerText { 
+    from{ font-size: large}
+    to{font-size: xx-large}
+}
+
+@keyframes scaleUp{
+    from{scale: 0;}
+    to{scale: 1;}
+}
+
+
+h2 {
+    font-size: xx-large;
+    text-align: center;
+    align-content: center;
+    margin-left: 160px;
+    font-family: 'Montserrat', sans-serif;
+    animation-name: MoviePickerText;
+    animation-duration: 4s;
+}
+
+.baseDiv1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 72px;
+    animation-name: scaleUp;
+    animation-duration: 6s;
+}
+
+.baseDiv1 {
+    margin-left: 160px;
+    margin-right: auto;
+    padding: 0;
+}
+
+input[type="text"] {
+    transition: all 2s;
+    width: 150px;
+    height: 40px;    
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 600px;
+    margin-right: auto;
+}
+
+.text_box label{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type="text"]:focus {
+    transition: width 2s;
+    width: 200px;
+}
+    
+    

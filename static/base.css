@@ -1,0 +1,47 @@
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes scaleUp{
+    from{scale: 0;}
+    to{scale: 1;}
+}
+
+
+.sidenav {
+    /*navbar as a whole */ 
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(73, 73, 73);
+    overflow-x: hidden;
+    
+}
+
+.sidenav a {
+    /*Text within navbar */
+    transition: all 2s;
+    padding: 4px 8px 6px 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    color: #D6CCC2;
+    display: block;
+}
+
+.sidenav a:hover {
+    transition: font-size 2s, color 2s ease-in-out;
+    font-size: xx-large;
+    color: #f1f1f1;
+}
+
+
+.main{
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+
+

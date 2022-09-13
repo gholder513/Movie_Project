@@ -7,25 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GHMOVIES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
 </head>
-<style> 
-h1 {
-    text-align: center;
-    text-decoration:none;
-}
-h1:hover {
-    transition: font-size, text-decoration, 4s;
-    font-size: 40px;
-    text-decoration: double;
-}
 
-</style>
 
 <body>
-    <div class = "webHeader">
-        <h1>
-            Welcome to The Slumber Party
-        </h1>
+    <div class = "wrapper">
+        <header>
+            <h1 class="title">RandMovies</h1>
+            <img src="{{url_for('static', filename='foreground.png')}}" class = "foreground"/>
+            <img src="{{url_for('static', filename='possibleBg.jpeg')}}" class = "background"/>
+        </header>
+        <section>
+            <h2>Having Trouble Picking a Movie?</h2>
+            <div class = text_box>
+                <form autocomplete="on" form method="POST">
+                    <input type="text" id="movieName" name="movieName" placeholder="Type in the Magic Box"><br>
+                </form>
+            </div>
+
+        </section>
     </div>
 </body>
 </html>
