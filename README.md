@@ -1,3 +1,2 @@
-# movie_project
- Movie Project
- Used to develop familiarity with python routes, html and css basics.
+Movie Project:
+Used to develop basic familiarity with python routes, html and css basics.
